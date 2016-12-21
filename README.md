@@ -4,13 +4,13 @@ Step1. clone project
 $ git clone https://github.com/ivan0124/docker_api_gw.git
 </pre>
 
-Step2. enter `docker_api_gw` directory and clone APIGateway source code
+Step2. enter `docker_alpine_api_gw` directory and clone APIGateway source code
 <pre>
-$ cd docker_api_gw
-$ git clone https://github.com/ADVANTECH-Corp/APIGateway.git
+$ cd docker_alpine_api_gw
+$ git clone https://github.com/ivan0124/APIGateway.git
 </pre>
 
-Step3. enter `docker_api_gw/APIGateway/apps/wsn_manage` to edit `wisesnail_msgmgr.js` like below
+Step3. enter `docker_alpine_api_gw/APIGateway/apps/wsn_manage` to edit `wisesnail_msgmgr.js` like below
 <pre>
 //var Client  = Mqtt.connect('mqtt://advigw-mqtt-bus');
 var Client  = Mqtt.connect('mqtt://mqtt.advigw_network');
@@ -31,10 +31,10 @@ Step6. login to  `Webmin` server and use GET/PUT RESTful API
 
 
 # How to develope and update APIGateway
-Step1. enter `docker_api_gw` directory and clone APIGateway source code
+Step1. enter `docker_alpine_api_gw` directory and clone APIGateway source code
 <pre>
 $ cd docker_api_gw
-$ git clone https://github.com/ADVANTECH-Corp/APIGateway.git
+$ git clone https://github.com/ivan0124/APIGateway.git
 </pre>
 
 Step2. edit `deploy_api_gw.sh` and change parameter `-itd` to `-it`.
