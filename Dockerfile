@@ -13,7 +13,7 @@ VOLUME ["/home/adv/wsn_setting"]
 #WORKDIR /home/adv
 #ENTRYPOINT ["init_wsn_setting.sh"]
 #copy wsn_setting files
-CMD if [ ! -e /home/adv/APIGateway/.git ] ; then
+CMD if ! -e /home/adv/APIGateway/.git ; then
         cp -rf /home/adv/api_gw/* /home/adv/APIGateway/ &&\
         cp -rf /home/adv/api_gw/.git /home/adv/APIGateway/ &&\
     fi &&\
