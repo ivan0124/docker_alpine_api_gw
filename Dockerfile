@@ -10,5 +10,5 @@ VOLUME ["/home/adv/APIGateway"]
 VOLUME ["/home/adv/wsn_setting"]
 
 # set up adv as sudo
-#WORKDIR /home/adv
-ENTRYPOINT ["init_wsn_setting.sh"]
+WORKDIR /home/adv
+#ENTRYPOINT ["init_wsn_setting.sh"]
