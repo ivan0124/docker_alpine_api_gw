@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update && apk add --no-cache git nodejs && \
+RUN apk update && apk add --no-cache git bash nodejs && \
     git clone https://github.com/ADVANTECH-Corp/APIGateway.git /home/adv/api_gw && \
     cp /home/adv/api_gw/script/init_wsn_setting.sh /usr/local/bin/. && \
     mkdir /home/adv/wsn_setting && \
