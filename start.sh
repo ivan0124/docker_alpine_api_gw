@@ -21,6 +21,7 @@ cd /home/adv/wsn_setting/device_table
 rm -rf *
 
 #
-cd /home/adv/APIGateway
-node ./app.js
+#
+#cd /home/adv/APIGateway
+#node ./app.js
 
