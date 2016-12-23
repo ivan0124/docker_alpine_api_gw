@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update && apk add --no-cache git nodejs && \
+RUN apk update && apk add --no-cache bash git nodejs && \
     git clone https://github.com/ADVANTECH-Corp/APIGateway.git /home/adv/api_gw && \
     git clone https://github.com/ivan0124/docker_alpine_api_gw.git /home/adv/script &&\
     cp /home/adv/script/start.sh /usr/local/bin/. && \
