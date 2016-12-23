@@ -15,7 +15,9 @@ Step1. after launch `deploy.sh`, it will generate source code `APIGateway` direc
 
 ![result link](https://github.com/ivan0124/docker_alpine_api_gw/blob/master/images/docker_20161223_1.png)
 
-Step2. enter `APIGateway` to edit source code and re-launch `deploy.sh` to run new source code
+Step2. enter `APIGateway` to edit source code
+
+Step3.re-launch `deploy.sh` to run new source code
 
 # How to check container log
 Step1. launch `log.sh`. then it output container log and show file name for you
