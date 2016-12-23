@@ -26,7 +26,7 @@ https://hub.docker.com/r/ivan0124tw/docker_alpine_api_gw/~/settings/automated-bu
 
 Step3. running new container and update new source code
 <pre>
-$ rm ./APIGateway
+$ rm -rf ./APIGateway
 $ ./deploy.sh
 </pre>
 
