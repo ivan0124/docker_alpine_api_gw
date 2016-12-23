@@ -18,7 +18,7 @@ Step1. after launch `deploy.sh`, it will generate source code `APIGateway` direc
 Step2. enter `APIGateway` to edit source code and re-launch `deploy.sh` to run new source code
 
 # How to build new container image
-Step1. test ok. then commit source code to `GitHub`
+Step1. enter `APIGateway` directory and using `git add , git commit, git push` to commit source code to `GitHub`
 
 Step2. go to `Docker Hub` to build container image
 
