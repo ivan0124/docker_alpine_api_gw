@@ -9,6 +9,7 @@ RUN apk update && apk add --no-cache git nodejs && \
 VOLUME ["/home/adv/APIGateway"]
 VOLUME ["/home/adv/wsn_setting"]
 
-# set up adv as sudo
+EXPOSE 3000
+
 #WORKDIR /home/adv
 ENTRYPOINT ["init_wsn_setting.sh"]
