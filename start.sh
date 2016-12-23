@@ -22,6 +22,6 @@ rm -rf *
 
 #
 #
-#cd /home/adv/APIGateway
-#node ./app.js
+cd /home/adv/APIGateway
+node ./app.js
 
