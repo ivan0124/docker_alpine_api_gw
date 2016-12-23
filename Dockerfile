@@ -11,16 +11,4 @@ VOLUME ["/home/adv/wsn_setting"]
 
 # set up adv as sudo
 #WORKDIR /home/adv
-#ENTRYPOINT ["init_wsn_setting.sh"]
-#copy wsn_setting files
-
-CMD cp -rf /home/adv/api_gw/* /home/adv/APIGateway/ &&\
-    cp -rf /home/adv/api_gw/.git /home/adv/APIGateway/ &&\
-    cp -rf /home/adv/api_gw/apps/wsn_manage/wsn_setting/* /home/adv/wsn_setting/ &&\
-    mkdir -p /home/adv/wsn_setting/device_html &&\
-    cd /home/adv/wsn_setting/device_html &&\
-    rm -Rf -- */ &&\
-    mkdir -p /home/adv/wsn_setting/device_table &&\
-    cd /home/adv/wsn_setting/device_table &&\
-    rm -rf * &&\
-    cd /home/adv/APIGateway && node ./app.js
+ENTRYPOINT ["init_wsn_setting.sh"]
