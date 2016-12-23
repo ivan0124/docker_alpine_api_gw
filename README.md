@@ -23,7 +23,7 @@ Step4. go to `Docker Hub` to build container image
 
 https://hub.docker.com/r/ivan0124tw/docker_alpine_api_gw/~/settings/automated-builds/
 
-Step5. running new container and source code
+Step5. running new container and update new source code
 <pre>
 $ rm ./APIGateway
 $ ./deploy.sh
