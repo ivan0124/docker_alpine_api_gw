@@ -15,15 +15,16 @@ Step1. after launch `deploy.sh`, it will generate source code `APIGateway` direc
 
 ![result link](https://github.com/ivan0124/docker_alpine_api_gw/blob/master/images/docker_20161223_1.png)
 
-Step2. enter `APIGateway` to edit source code and re-launch `deploy.sh`
+Step2. enter `APIGateway` to edit source code and re-launch `deploy.sh` to run new source code
 
-Step3. test ok. then commit source code to `GitHub`
+# How to build new container image
+Step1. test ok. then commit source code to `GitHub`
 
-Step4. go to `Docker Hub` to build container image
+Step2. go to `Docker Hub` to build container image
 
 https://hub.docker.com/r/ivan0124tw/docker_alpine_api_gw/~/settings/automated-builds/
 
-Step5. running new container and update new source code
+Step3. running new container and update new source code
 <pre>
 $ rm ./APIGateway
 $ ./deploy.sh
